@@ -1,0 +1,8 @@
+
+    <h1> PictureLooker </h1>
+
+    <h2> Feed </h2>
+      <% @posts.each do |post| %>
+        <%= image_tag post.image.url(:medium) %>
+        <%= post.caption %>
+      <% end %>
